@@ -1,0 +1,33 @@
+{
+    "name": "jncinet/laravel-flysystem-wcs",
+    "description": "A WCS storage flysystem for laravel.",
+    "keywords": [
+        "wcs",
+        "laravel",
+        "CDNetworks"
+    ],
+    "homepage": "https://www.qihucms.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zhangye",
+            "email": "y@qilephp.com"
+        }
+    ],
+    "require": {
+        "league/flysystem": "^1.0.40",
+        "jncinet/flysystem-wcs": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jncinet\\LaravelFilesystem\\Wcs\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jncinet\\LaravelFilesystem\\Wcs\\WcsStorageServiceProvider"
+            ]
+        }
+    }
+}
